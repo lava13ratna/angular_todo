@@ -1,0 +1,32 @@
+<body class= "body">
+  <h1>TODO LIST</h1>
+  <div class="add">
+    <a [routerLink]="['/todoadds']"mat-raised-button (click)="goAdd()">Add New</a>
+  </div>
+<mat-card style="margin:2em" class="example-card" *ngFor="let arr of array">
+    <mat-card-header>
+      <mat-card-title>{{arr.title}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="card">
+      <p>
+      Description: {{arr.description}}
+      </p>
+      </div>
+      <p>
+       Priority: {{arr.priority}}
+       </p>
+       <p>
+       Due Date: {{arr.duedate}} 
+       </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <!-- <a [routerLink]="['/todoadds']"mat-raised-button (click)="goAdd()">Add</a> -->
+      <a [routerLink]="['/todoadds']"mat-raised-button (click)="goEdit(arr.id)">Edit</a>
+      <a mat-raised-button (click)="onDelete(arr.id)">Complete</a>
+      <!-- <button mat-raised-button class="delete"(click)="goEdit(todoadd.id)"value="{{todoadd.id}}">Delete</button> --> 
+      <!-- <button mat-button>Delete</button> -->
+    </mat-card-actions>
+  </mat-card>
+ 
+</body>

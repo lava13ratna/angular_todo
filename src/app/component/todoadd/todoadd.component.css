@@ -1,0 +1,44 @@
+.body
+{
+  background:#A4A6A5; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2000px;
+  
+}
+h1 {
+    color:black;
+    padding-left: 100px;
+    font-family: 'serif';
+    font-size: 50px;
+    position: relative;
+    padding-top: 50px;
+    font-weight: bold;
+    
+  }
+  .mat-raised-button {
+    background-color:black ;
+   
+    
+    color: white;
+    padding: 5px 20px;
+    display: inline;
+    font-style: oblique;
+    font-size: 20px;
+    
+    font-weight: bold;
+  }
+  .button-row button,
+.button-row a {
+  margin-right: 30px;
+  
+  
+}
+.button-row
+{
+    padding-left: 500px;
+  padding-top: 50px;
+}.formcontainer{
+
+  padding-left: 30px;
+}
